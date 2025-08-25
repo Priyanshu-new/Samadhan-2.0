@@ -1,1 +1,44 @@
 
+Day one project 
+    target := Print student details from an object
+    
+    
+    Divide into 3 Parts
+
+HTML (the skeleton 🦴) → structure of the webpage.
+
+CSS (the clothes 👕) → makes the page look nice.
+
+JavaScript (the brain 🧠) → makes things happen when we click.
+
+Build HTML
+
+Made a heading <h1> to show “Student Details”.
+
+Made a <button> so user can click.
+
+Made an empty <div> box where details will appear.
+
+Add CSS
+
+Gave colors (blue heading, green button, gray background).
+
+Made the button round and clickable.
+
+Styled the student details text.
+
+Write JavaScript
+
+Created an object called student (like a backpack with details inside).
+
+Made a function showStudent() to put details inside the <div>.
+
+Linked it to the button → when clicked, it runs the function.
+
+Connect Everything
+
+Linked CSS file in <head> → for styling.
+
+Linked JS file at bottom of <body> → for logic.
+
+Tested in browser → button works, details show. 🎉
