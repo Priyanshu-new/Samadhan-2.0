@@ -6,9 +6,9 @@ const app = express();
 const port = 3000;
 
 const students = [
-  { id: 1, name: 'Alice', major: 'Computer Science' },
-  { id: 2, name: 'Bob', major: 'Mechanical Engineering' },
-  { id: 3, name: 'Charlie', major: 'Biology' }
+  { id: 1, name: 'Ramesh', major: 'Computer Science' },
+  { id: 2, name: 'Boby', major: 'Mechanical Engineering' },
+  { id: 3, name: 'Cristiano', major: 'Biology' }
 ];
 
 // New route for the main home page (the "/" address).
