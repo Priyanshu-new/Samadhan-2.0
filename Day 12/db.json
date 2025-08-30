@@ -1,0 +1,19 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "Kinematics",
+      "subject": "Physics"
+    },
+    {
+      "id": 2,
+      "title": "Chemical Bonding",
+      "subject": "Chemistry"
+    },
+    {
+      "id": 3,
+      "title": "Quadratic Equations",
+      "subject": "Maths"
+    }
+  ]
+}
