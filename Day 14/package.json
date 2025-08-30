@@ -1,0 +1,23 @@
+{
+  "name": "auth-backend",
+  "version": "1.0.0",
+  "description": "A simple backend for user registration and login with JWT.",
+  "main": "authServer.js",
+  "scripts": {
+    "start": "node authServer.js",
+    "dev": "nodemon authServer.js"
+  },
+  "keywords": [
+    "auth",
+    "jwt",
+    "node",
+    "express"
+  ],
+  "author": "An Indian Learner",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
