@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { fakeLoginApi } from '../api/fakeLoginApi';
+import { fakeLoginApi } from '../api/MockApi';
 
 const LoginForm = ({ onLoginSuccess }) => {
   const [username, setUsername] = useState('');
@@ -74,3 +74,4 @@ const LoginForm = ({ onLoginSuccess }) => {
 };
 
 export default LoginForm;
+
