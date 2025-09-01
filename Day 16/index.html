@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav Collection - Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Utsav Collection</h1>
+            <p>Celebrate every festival with our exclusive ethnic wear. Traditional elegance meets modern style.</p>
+            <a href="products.html" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid" id="featured-products">
+                <!-- Featured products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        // Load featured products on homepage
+        async function loadFeaturedProducts() {
+            try {
+                const products = [
+                    {
+                        id: 'p1',
+                        name: 'Kurta Set - Utsav Collection',
+                        price: 1299,
+                                                image: 'https://imgs.search.brave.com/I7KPq1bYxsKnd3FNr6KO_Y0yn9oXjeGj_QPxBu7NfIs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9yYW1y/YWpjb3R0b24uaW4v/Y2RuL3Nob3AvZmls/ZXMv/kurta-set.jpg'
+                                            }
+                                        ];
+                                        // You can add code here to render the products if needed
+                                    } catch (error) {
+                                        console.error('Failed to load featured products:', error);
+                                    }
+                                }
+                                loadFeaturedProducts();
+                            </script>
+                        </body>
+                        </html>

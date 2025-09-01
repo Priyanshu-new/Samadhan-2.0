@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products - Utsav Collection</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container">
+    <h1>Our Products</h1>
+    <div id="product-list" class="product-grid"></div>
+  </main>
+
+  <script src="../scripts/main.js"></script>
+  <script>
+    // Load products and display
+    async function loadProducts() {
+      const products = [
+        {
+          id: 'p1',
+          name: 'Kurta Set - Utsav Collection',
+          description: 'Elegant cotton kurta set perfect for festivals and special occasions. Handcrafted with traditional embroidery.',
+          price: 1299,
+          image: 'https://imgs.search.brave.com/I7KPq1bYxsKnd3FNr6KO_Y0yn9oXjeGj_QPxBu7NfIs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9yYW1y/YWpjb3R0b24uaW4v/Y2RuL3Nob3AvZmls/ZXMvMjQxMjI0X0Vj/b21fUmFtcmFqMjAx/ODkuanBnP3Y9MTcz/NTM3ODEzMSZ3aWR0/aD0xMDgw'
+        },
+        {
+          id: 'p2',
+          name: 'Silk Saree - Royal Blue',
+          description: 'Beautiful silk saree with golden zari work. Perfect for weddings and formal events.',
+          price: 3599,
+          image: 'https://imgs.search.brave.com/qLxgEyO96Dt3mwTXvKqwgt2zDFwgkwDVKTbnC3keoM4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzI3NDY2Mjk4L3Iv/aWwvZGZkODJkLzQ3/NzIzNzgzMjQvaWxf/NjAweDYwMC40Nzcy/Mzc4MzI0X3JxYnAu/anBn'
+        },
+        {
+          id: 'p3',
+          name: 'Kurta Set - Festive Red',
+          description: 'Bright red kurta set with intricate embroidery work. Comfortable and stylish.',
+          price: 1499,
+          image: 'https://imgs.search.brave.com/etwupVfGo_dhA38JzhB6Mg0pghV7xExJv0h0iAtWTLs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZmFiYWxsZXkuY29t/L2ltYWdlcy9Qcm9k/dWN0L0lMSzA0NzY2/Wi9kMy5qcGc'
+        },
+        {
+          id: 'p4',
+          name: 'Cotton Saree - Summer Collection',
+          description: 'Lightweight cotton saree for daily wear. Breathable and comfortable in hot weather.',
+          price: 1899,
+          image: 'https://imgs.search.brave.com/hMC4QOdwkPGmglzDPhqktzXiSPRWZR2fhB-3eNzINGE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzE3LzI5/L2U4LzE3MjllODBm/YmVkNTYwN2IxMGI3/Njg5NTI4OTA5NDc1/LmpwZw'
+        },
+        {
+          id: 'p5',
+          name: 'Designer Lehenga Set',
+          description: 'Exclusive designer lehenga set with heavy embroidery and sequin work.',
+          price: 5999,
+          image: 'https://imgs.search.brave.com/BgX58KekmY2YGqGYHqgPINqraK2HM5l8hthOwK41zc8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c2hvcGdhcmIuY29t/L2Nkbi9zaG9wL3By/b2R1Y3RzL1BFMTAy/OF8xLmpwZz92PTE2/NzkxMzQ2MDkmd2lk/dGg9MTA4MA'
+        },
+        {
+          id: 'p6',
+          name: "Men's Sherwani - Wedding Collection",
+          description: 'Traditional sherwani for groom and wedding guests. Premium quality fabric.',
+          price: 7999,
+          image: 'https://imgs.search.brave.com/Cb4FKLNs_a8AmYBnaiR07P9_ClPweLhC6RWta9Bgysc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzEzL2Uw/L2E1LzEzZTBhNWY1/MDQ2ZTYyMjViMDFj/NjA3MWYzZGU4ODJl/LmpwZw'
+        }
+      ];
+
+      const productList = document.getElementById('product-list');
+      productList.innerHTML = '';
+
+      products.forEach(product => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+
+        card.innerHTML = `
+          <img src="${product.image}" alt="${product.name}" />
+          <h3>${product.name}</h3>
+          <p>${product.description}</p>
+          <p class="price">₹${product.price}</p>
+          <button class="add-to-cart-btn" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}">Add to Cart</button>
+        `;
+
+        productList.appendChild(card);
+      });
+
+      // Add event listeners to add-to-cart buttons
+      document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const id = button.getAttribute('data-id');
+          const name = button.getAttribute('data-name');
+          const price = parseInt(button.getAttribute('data-price'));
+
+          addToCart({ id, name, price, quantity: 1 });
+        });
+      });
+    }
+
+    // Add product to cart in localStorage
+    function addToCart(product) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      const existing = cart.find(item => item.id === product.id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push(product);
+      }
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(`${product.name} added to cart!`);
+    }
+
+    loadProducts();
+  </script>
+</body>
+</html>
