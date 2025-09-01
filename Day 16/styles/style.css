@@ -1,0 +1,171 @@
+/* style.css - basic styling for Utsav Collection store */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #fff8f0;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+h1 {
+  color: #b7410e;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #b7410e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #8a2c0e;
+}
+
+.navbar {
+  background-color: #b7410e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar .logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  color: #b7410e;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.product-card .price {
+  font-weight: bold;
+  margin: 10px 0;
+  color: #b7410e;
+}
+
+.product-card button {
+  background-color: #b7410e;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #8a2c0e;
+}
+
+#cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.cart-item div {
+  flex: 1;
+}
+
+.cart-item .item-name {
+  font-weight: 600;
+  color: #b7410e;
+}
+
+.cart-item input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.cart-item button {
+  background-color: #b7410e;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #8a2c0e;
+}
+
+#cart-summary {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #b7410e;
+  margin-bottom: 20px;
+}
