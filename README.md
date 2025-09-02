@@ -1,4 +1,4 @@
-### Samadhan 2.0
+# Samadhan 2.0
 
 This repository contains all the **mini tasks and project work** completed while learning through the **Full-Stack Learning Roadmap** course provided by **Chlmchase**.  
 
