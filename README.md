@@ -53,7 +53,7 @@ We also worked on a **research-based project and presentation (PPT uploaded in t
 - Problem: Over **1 billion people** live with some form of disability, yet most education platforms lack accessibility.  
 - Solution: An **AI-powered platform** with features like Sign Language Translation, Text-to-Speech, Eye & Facial Input, and Audio Study Materials.  
 - Tech Stack: **React, Node.js, MongoDB, TensorFlow, Google Cloud APIs**  
-- Goal: **Accessible learning is not optional – it’s essential.**:contentReference[oaicite:0]{index=0}  
+- Goal: **Accessible learning is not optional – it’s essential. 
 
 ---
 
