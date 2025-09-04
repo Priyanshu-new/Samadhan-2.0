@@ -50,7 +50,6 @@ A full-featured social platform API with user authentication, posts, comments, a
 
 ```bash
 git clone <repository-url>
-cd social-platform
 ```
 
 2. Install dependencies
