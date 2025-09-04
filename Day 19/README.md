@@ -160,6 +160,9 @@ The project currently uses a mock in-memory database for testing purposes. To us
 2. Set the `DATABASE_URL` environment variable in the `.env` file
 3. Run the `setup-db.js` script to initialize the database schema
 
+
+   note I have used SQL in data base just to learn as we are new to this 
+
 ## Future Enhancements
 
 - User profile pictures and customization
@@ -168,6 +171,3 @@ The project currently uses a mock in-memory database for testing purposes. To us
 - Search functionality for users and posts
 - Privacy settings for user data
 
-## License
-
-MIT
