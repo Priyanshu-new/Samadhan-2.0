@@ -161,9 +161,6 @@ The project currently uses a mock in-memory database for testing purposes. To us
 2. Set the `DATABASE_URL` environment variable in the `.env` file
 3. Run the `setup-db.js` script to initialize the database schema
 
-
-we are using SQL for database insted of the Mongodb due to easy of coding but I am also new in SQL and just started learning SQL for fun 
-
 ## Future Enhancements
 
 - User profile pictures and customization
@@ -171,3 +168,7 @@ we are using SQL for database insted of the Mongodb due to easy of coding but I 
 - Notifications for interactions
 - Search functionality for users and posts
 - Privacy settings for user data
+
+## License
+
+MIT
