@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0079bf;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  background: #0079bf;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #026aa7;
+}
+
+.board {
+  background: #ebecf0;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.list {
+  background: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}

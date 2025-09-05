@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini TaskBoard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>📝 Mini TaskBoard</h1>
+  <button id="newBoardBtn">+ Add Board</button>
+
+  <div id="boardsArea"></div>
+
+  <!-- Templates -->
+  <template id="boardTemplate">
+    <div class="board">
+      <h2 class="boardTitle"></h2>
+      <button class="addListBtn">+ Add List</button>
+      <div class="listsArea"></div>
+    </div>
+  </template>
+
+  <template id="listTemplate">
+    <div class="list">
+      <h3 class="listTitle"></h3>
+      <button class="addCardBtn">+ Add Card</button>
+      <ul class="cardsArea"></ul>
+    </div>
+  </template>
+
+  <template id="cardTemplate">
+    <li class="card"></li>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
