@@ -79,7 +79,7 @@ Her journey motivates us to work towards **bridging communication gaps** and bui
 
 ## 📺 Demo Video
 We created a **team presentation video** explaining our **agenda, PPT, and course journey**.  
-👉 [Demo Video Link – *Add here once uploaded*]  
+👉 [https://youtu.be/qSbLR6sLVss?feature=shared]  
 
 ---
 
