@@ -48,11 +48,10 @@ The project is organized as follows:
 
 ```
 utsav-store/
-├── pages/
-│   ├── index.html          # Home page
-│   ├── products.html       # Product listing page
-│   ├── cart.html           # Shopping cart page
-│   └── checkout.html       # Checkout/payment page
+├── index.html          # Home page
+├── products.html       # Product listing page
+├── cart.html           # Shopping cart page
+│─ checkout.html       # Checkout/payment page
 ├── components/
 │   └── navbar.html         # Navigation bar component
 ├── styles/
@@ -68,7 +67,7 @@ utsav-store/
 
  Open as Static Files
 
-- Open the `pages/index.html` file directly in your browser.
+- Open the `index.html` file directly in your browser.
 - Navigate through the site using links.
 - **Note:** Some browsers may restrict JavaScript features when opening files directly.
 
