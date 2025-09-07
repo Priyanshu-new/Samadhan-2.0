@@ -24,4 +24,5 @@ function updateCartCount() {
   }
 }
 
-loadNavbar();
+
+export { loadNavbar, updateCartCount };
